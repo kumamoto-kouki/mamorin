@@ -1,0 +1,4 @@
+node_modules/
+backend/demo.sqlite3
+backend/.venv/
+__pycache__/

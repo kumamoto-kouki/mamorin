@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+@theme {
+  --color-mint-50: #f0fbf8;
+  --color-mint-100: #d9f5ee;
+  --color-mint-200: #b2ebdd;
+  --color-mint-300: #7fdcc8;
+  --color-mint-400: #45c8ae;
+  --color-mint-500: #1fb096;
+  --color-mint-600: #128f7b;
+  --color-ink: #13343b;
+  --color-ink-soft: #4b6b70;
+  --color-lime: #d6f36b;
+  --color-sun: #ffd166;
+  --color-coral: #ff7a6b;
+  --font-sans: "Noto Sans JP", system-ui, sans-serif;
+  --font-round: "M PLUS Rounded 1c", "Noto Sans JP", sans-serif;
+}
+
+html, body { margin: 0; background: var(--color-mint-50); color: var(--color-ink); font-family: var(--font-sans); }
+.brand-grad { background: linear-gradient(120deg, #45c8ae 0%, #7fdcc8 55%, #d6f36b 100%); }
+.label-en { font-size: 12px; letter-spacing: .18em; font-weight: 700; text-transform: uppercase; color: var(--color-mint-600); }
+@keyframes pop { 0% { transform: scale(.6); opacity: 0 } 70% { transform: scale(1.06) } 100% { transform: scale(1); opacity: 1 } }
+.pop { animation: pop .35s ease-out both; }
+@keyframes bob { 0%,100% { transform: translateY(0) } 50% { transform: translateY(-4px) } }
+.bob { animation: bob 2.4s ease-in-out infinite; }
